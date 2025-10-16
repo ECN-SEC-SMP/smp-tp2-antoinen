@@ -1,0 +1,14 @@
+# TP Entiers Longs SMP Antoine NOËL
+
+## 🚀 Principe
+Manipulation d'entiers
+- **Opérations** : add, sub, mul
+- **Fibonnaci** : calcul de la suite
+- **Configurable** : entier & nombre de valeur de Fibonnaci modifiable sans recompiler
+
+## 🛠️ Build
+```bash
+cd build
+cmake ..
+make
+./Tp2
