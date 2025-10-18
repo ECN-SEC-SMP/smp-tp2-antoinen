@@ -58,6 +58,7 @@ bool compAbs(t_EntierLong a, t_EntierLong b)
     {
         int r = a.chiffres[MAXCHIFFRES-i] - b.chiffres[MAXCHIFFRES-i];
         if (r>0) return false;
+        else if(r<0) return true;
     }
     return true;
 }

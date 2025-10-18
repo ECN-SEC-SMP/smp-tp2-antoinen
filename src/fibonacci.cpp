@@ -1,5 +1,5 @@
 #include <iostream>
-#include "fibonnaci.h"
+#include "fibonacci.h"
 
 Fibonacci::Fibonacci() // constructeur
 {
@@ -14,7 +14,7 @@ Fibonacci::~Fibonacci() {} // destructeur
 */
 void Fibonacci::calculFibonacci(int n)
 {
-    std::cout << "Fibonnaci avec n=" << n << "\n";
+    std::cout << "Fibonacci avec n=" << n << "\n";
     v.push_back(u0);
     v.push_back(u1);
 

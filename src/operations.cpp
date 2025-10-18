@@ -58,13 +58,14 @@ t_EntierLong sub(t_EntierLong a, t_EntierLong b)
 {
     // variables
     t_EntierLong r;
-    bool c = false;
+    
+    for (int i = 0; i < MAXCHIFFRES; i++) r.chiffres[i] = 0;
     if (a.negatif == b.negatif)
     {
         if (!compAbs(a, b)) // vérification a>b
         {
             r.negatif = a.negatif;
-
+            bool c = false;
             for (int i = 0; i < MAXCHIFFRES; i++)
             {
                 int diff = a.chiffres[i] - b.chiffres[i] - c;
@@ -85,9 +86,11 @@ t_EntierLong sub(t_EntierLong a, t_EntierLong b)
         else // a < b
         {
             r.negatif = !a.negatif;
+            bool c = false;
             for (int i = 0; i < MAXCHIFFRES; i++)
             {
                 int diff = b.chiffres[i] - a.chiffres[i] - c;
+                //int diff = a.chiffres[i] - b.chiffres[i] - c;
                 if (diff < 0)
                 {
                     diff += 10;

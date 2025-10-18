@@ -1,5 +1,5 @@
 /*
-Fichier de définition de la classe Fibonnaci permettant de calculer la suite
+Fichier de définition de la classe Fibonacci permettant de calculer la suite
 */
 
 #ifndef FIBONNACI_H

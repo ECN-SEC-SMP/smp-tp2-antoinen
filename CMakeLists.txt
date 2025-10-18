@@ -12,7 +12,7 @@ set(src
     src/operations.cpp
     src/utilitaire.cpp
     src/config.cpp
-    src/fibonnaci.cpp
+    src/fibonacci.cpp
 )
 
 add_executable(${PROJECT_NAME} ${src})
